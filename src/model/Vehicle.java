@@ -1,4 +1,5 @@
 package model;
+
 public class Vehicle {
 
     private String number;
@@ -7,10 +8,8 @@ public class Vehicle {
         this.number = number;
     }
 
-    public String getNumber() {
+    public String getVehicleNumber() {
         return number;
     }
-    public void setNumber(String number) {
-        this.number = number;
-    }
+
 }

@@ -6,6 +6,7 @@ public class ParkingSlot {
 
     public ParkingSlot(int slotNumber){
         this.slotNumber = slotNumber;
+        this.vehicle = null;
     }
     public int getSlotNumber() {
         return slotNumber;
@@ -16,5 +17,17 @@ public class ParkingSlot {
 
     public boolean isSlotFree(){
         return vehicle == null;
+    }
+
+    public void assignVehicle(Vehicle vehicle){
+        this.vehicle = vehicle;
+    }
+
+    public void removeVehicle(){
+        this.vehicle = null;
+    }
+
+    public Vehicle getVehicle() {
+        return vehicle;
     }
 }
